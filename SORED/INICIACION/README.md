@@ -33,7 +33,7 @@ Tengo configurada la direccion ip en modo estatica, con las sigientes direccione
 
 ## 8. ¿Qué es la dirección MAC del equipo? ¿Cómo puedes identificarla en tu equipo?
 
-![IMG not Found](capturas/originales/captura1.png)
+![IMG not Found](capturas/originales/captura2.png)
 
 
 ## 9. La configuración de la tarjeta de red en VirtualBox ofrece las seis posibilidades que se muestran en la imagen de la derecha.Describe para qué sirve cada una de ellas, ejemplificando lasmismas. Describe lo que ocurriría en cada caso con la comunicación por red entre tu equipo (anfitrión) y las máquinas virtuales que hubieras configurado con las distintas opciones.
