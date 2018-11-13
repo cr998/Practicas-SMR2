@@ -28,7 +28,7 @@ Compatibilidad con dispositivos USB 2.0 y USB 3.0, VirtualBox RDP, cifrado de di
 
 Tengo configurada la direccion ip en modo estatica, con las sigientes direcciones
 
-[IMG not Found](capturas/originales/captura1.png)
+![IMG not Found](capturas/originales/captura1.png)
 
 
 ## 8. ¿Qué es la dirección MAC del equipo? ¿Cómo puedes identificarla en tu equipo?
