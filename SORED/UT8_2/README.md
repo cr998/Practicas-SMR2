@@ -20,7 +20,7 @@ En cuanto abramos la pagina web aparecern las siguientes opciones.
 1. Rellenamos los campos que nos exige microsoft ("No entinedo para que quiere microsoft el nombre de nuestro puesto de trabajo").
 2. Pulsamos sobre el boton Continuar.
 
-![IMG not Found](capturas/captura3.png)
+![IMG not Found](capturas/originales/captura3.png)
 
 Despues de rellenar todos los datos microsoft no obfrece la opcion de subscribirse al boletin de noticias par a mandarnos informacion sobre subs nuevos productos.
 
