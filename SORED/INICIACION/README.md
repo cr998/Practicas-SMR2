@@ -33,7 +33,8 @@ Tengo configurada la direccion ip en modo estatica, con las sigientes direccione
 
 ## 8. ¿Qué es la dirección MAC del equipo? ¿Cómo puedes identificarla en tu equipo?
 
-La direccion mac es la direccion fisica de tu targeta de red y se puede identificar ejecutando el siguiente comando `ipconfig /all` en la terminal de windows
+La direccion mac es la direccion fisica de tu targeta de red y se puede identificar ejecutando el siguiente comando ipconfig /all en la terminal de windows
+
 ![IMG not Found](capturas/originales/captura2.png)
 
 
