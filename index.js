@@ -10,6 +10,22 @@ showdown.setOption('tables', 'true');
 var converter = new showdown.Converter({ extensions: ['icon'] });
 
 
+var ENV={
+  prod:false,
+  dev:false
+}
+
+if(process.argv[2]=="prod"){
+  ENV.prod=true;
+  console.log("prod")
+}else if(process.argv[2]=="dev"){
+  ENV.dev=true;
+  console.log("dev")
+}else{
+  ENV.dev=true;
+}
+
+
 var destFolder='docs';
 
 rmdir(destFolder, function (err, dirs, files) {
@@ -62,9 +78,16 @@ rmdir(destFolder, function (err, dirs, files) {
 function createHTML(str){
   var html='<html>'+
   '<head>'+
-  '<title>Practicas</title>'+
-  '<link href="/style.css" rel="stylesheet" type="text/css">'+
-  '</head>'+
+  '<title>Practicas</title>'
+  if(ENV.prod){
+    html+='<link href="/Practicas-SMR2/style.css" rel="stylesheet" type="text/css">'
+    console.log("prod")
+  }
+  if(ENV.dev){
+    html+='<link href="/style.css" rel="stylesheet" type="text/css">'
+    console.log("dev")
+  } 
+  html+='</head>'+
   '<body>\n\n\n\n'+
   str
   '\n\n\n\n<body>'+
