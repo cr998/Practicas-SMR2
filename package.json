@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "serve": "http-server docs",
+    "serve": "http-server devdocs",
     "build:dev": "node index.js dev",
     "build:prod": "node index.js prod",
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -25,6 +25,7 @@
   },
   "dependencies": {
     "http-server": "^0.11.1",
+    "log-timestamp": "^0.2.1",
     "pretty": "^2.0.0",
     "recursive-copy": "^2.0.9",
     "rmdir": "^1.2.0",

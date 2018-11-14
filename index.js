@@ -5,6 +5,7 @@ var copy = require('recursive-copy');
 var walk = require('walk-folder-tree');
 var rmdir = require('rmdir');
 var pretty = require('pretty');
+require('log-timestamp');
 
 showdown.setOption('tables', 'true');
 var converter = new showdown.Converter({ extensions: ['icon'] });
@@ -17,16 +18,11 @@ var ENV={
 
 if(process.argv[2]=="prod"){
   ENV.prod=true;
-  console.log("prod")
-}else if(process.argv[2]=="dev"){
-  ENV.dev=true;
-  console.log("dev")
+  var destFolder='docs';
 }else{
   ENV.dev=true;
+  var destFolder='devdocs';
 }
-
-
-var destFolder='docs';
 
 rmdir(destFolder, function (err, dirs, files) {
   console.log("Borrando archivos carpeta "+destFolder)
@@ -42,9 +38,9 @@ rmdir(destFolder, function (err, dirs, files) {
       } else {
         console.log("copiado recursivo completado");
         walk({
-          path: 'docs',
+          path: destFolder,
           fn: function(params, cb) {
-            if(params.name.endsWith('.md')){
+            if(params.name.endsWith('.md') && !params.directory){
               fs.readFile(params.fullPath, 'utf8', (err, data) => {
                 if (err) throw err;
                 console.log("Generando html desde "+params.fullPath);
@@ -81,11 +77,9 @@ function createHTML(str){
   '<title>Practicas</title>'
   if(ENV.prod){
     html+='<link href="/Practicas-SMR2/style.css" rel="stylesheet" type="text/css">'
-    console.log("prod")
   }
   if(ENV.dev){
     html+='<link href="/style.css" rel="stylesheet" type="text/css">'
-    console.log("dev")
   } 
   html+='</head>'+
   '<body>\n\n\n\n'+
@@ -95,4 +89,9 @@ function createHTML(str){
   return pretty(html)
 }
 
+
+var convert =function (params)
+{
+  
+}
 
