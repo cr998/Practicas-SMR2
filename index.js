@@ -4,13 +4,14 @@ require('showdown-icon');
 var copy = require('recursive-copy');
 var walk = require('walk-folder-tree');
 var rmdir = require('rmdir');
+var pretty = require('pretty');
 
 showdown.setOption('tables', 'true');
 var converter = new showdown.Converter({ extensions: ['icon'] });
 
 
 
-rmdir('dist', function (err, dirs, files) {
+rmdir('docs', function (err, dirs, files) {
   if(err != null && err.code != 'ENOENT'){
     console.error(err)
     process.exit(1)
@@ -29,7 +30,7 @@ rmdir('dist', function (err, dirs, files) {
                 nfp.splice(-1,1)
                 nfp.push("index.html")
                 nfp=nfp.join("\\")
-                fs.writeFile(nfp,converter.makeHtml(data), function(err) {
+                fs.writeFile(nfp,createHTML(converter.makeHtml(data)), function(err) {
                   if (err) throw err;
                   fs.unlink(params.fullPath, (err) => {
                     if (err) throw err;
@@ -45,5 +46,18 @@ rmdir('dist', function (err, dirs, files) {
   }
 });
 
+
+function createHTML(str){
+  var html='<html>'+
+  '<head>'+
+  '<title>Practicas</title>'+
+  '<link src="/style.css" rel="stylesheet" type="text/css">'+
+  '</head>'+
+  '<body>\n\n\n\n'+
+  str
+  '\n\n\n\n<body>'+
+  '</html>'
+  return pretty(html)
+}
 
 
