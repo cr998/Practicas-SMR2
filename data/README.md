@@ -26,3 +26,6 @@ Este repositorio esta diseñado para ir añadiendo las practicas realizadas en G
 
 + [Sistemas Operativos En Red (SORED)](./SORED)
 + [Aplicaciones Web (AWEB)](./AWEB)
++ [Servicios En Red (SRED)](./SRED)
++ [Empresa Iniciativa Emprendedora (EIE)](./SRED)
++ [Seguridad Informatica (SINF)](./SRED)
