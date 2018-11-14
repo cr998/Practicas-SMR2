@@ -63,7 +63,7 @@ function createHTML(str){
   var html='<html>'+
   '<head>'+
   '<title>Practicas</title>'+
-  '<link src="/style.css" rel="stylesheet" type="text/css">'+
+  '<link href="/style.css" rel="stylesheet" type="text/css">'+
   '</head>'+
   '<body>\n\n\n\n'+
   str
