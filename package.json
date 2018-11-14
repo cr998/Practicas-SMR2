@@ -1,0 +1,30 @@
+{
+  "name": "Practicas-SMR2",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cr998/Practicas-SMR2.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/cr998/Practicas-SMR2/issues"
+  },
+  "homepage": "https://github.com/cr998/Practicas-SMR2#readme",
+  "devDependencies": {
+    "showdown": "^1.9.0"
+  },
+  "dependencies": {
+    "recursive-copy": "^2.0.9",
+    "rmdir": "^1.2.0",
+    "showdown-icon": "^2.0.0",
+    "walk-folder-tree": "^1.0.1"
+  }
+}
