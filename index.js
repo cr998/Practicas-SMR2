@@ -15,12 +15,12 @@ rmdir('dist', function (err, dirs, files) {
     console.error(err)
     process.exit(1)
   }else{
-    copy('data', 'dist', function(error, results) {
+    copy('data', 'docs', function(error, results) {
       if (error) {
           console.error(error);
       } else {
         walk({
-          path: 'dist',
+          path: 'docs',
           fn: function(params, cb) {
             if(params.name.endsWith('.md')){
               fs.readFile(params.fullPath, 'utf8', (err, data) => {
