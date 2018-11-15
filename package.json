@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "serve": "http-server devdocs",
+    "serve": "http-server devdocs -c-1",
     "build:dev": "node index.js dev",
     "build:prod": "node index.js prod",
     "test": "echo \"Error: no test specified\" && exit 1"
