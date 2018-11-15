@@ -1,0 +1,38 @@
+#marco{
+	width:950px;
+	margin:100px 300px;
+	height:500px;
+	border:3px solid black;
+	clear:both;
+}
+#bola{
+	width:50px;
+	background:red;
+	height:50px;
+	margin:0px;
+	padding:0px;
+	border-radius:50px;
+	animation: bola 3s infinite linear;
+	position:relative;
+}
+@keyframes bola{
+	0%{left:0px;top:0px;}
+	50%{left:500px;top:200px;}
+	100%{left:900px;top:0px;}
+}
+#bola2{
+	width:50px;
+	background:blue;
+	height:50px;
+	margin:0px;
+	padding:0px;
+	border-radius:50px;
+	animation: bola2 3s infinite linear;
+	position:relative;
+}
+@keyframes bola2{
+	0%{left:0px;top:0px;}
+	50%{left:200px;top:300px;}
+	75%{left:700px;top:0px;}
+	100%{left:900px;top:300px;}
+}
