@@ -1,5 +1,4 @@
-# Practica UTF8_2 (Instalar Windows Server 2016 en VirtualBox)
-
+# UT8_2. Introducción al sistema operativo Windows Server. (Instalar Windows Server 2016 con interfaz gráfica)
 
 ## ¿En qué se diferencia un sistema operativo de tipo servidor de otro tipo escritorio o cliente como Windows 10? Pon ejemplos de Sistemas Operativos de cada uno de ellos.
 ## Investiga qué versiones existen de Windows Server 2016 y que características específicas tiene cada una de ellas.
