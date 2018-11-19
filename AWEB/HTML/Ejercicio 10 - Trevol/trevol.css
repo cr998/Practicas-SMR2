@@ -1,0 +1,33 @@
+body{
+	background-color:black;
+	text-align:center;
+}
+#corazon {
+	animation: corazon 5s infinite;
+	color:red;
+	font-size:60px;
+	margin:30px;
+}
+@keyframes corazon{
+	from {transform: scale(.5);}
+	to {transform: scale(3);}
+}
+#trevol {
+	animation: trevol 3s infinite;
+	font-size:200px;
+	margin:30px;
+}
+@keyframes trevol{
+	from {transform:rotateY(30deg);
+		color:blue;}
+	to {transform:rotateY(90deg);}
+}
+.letra{
+	color:white;
+	font-size:30px;
+	animation:color 1s ease-in-out .1s;
+	margin:30px;
+}
+@keyframes letra{
+	
+}
