@@ -1,8 +1,8 @@
 language: node_js
 node_js: 8.11.4
 before_install: 
-  apt install zip
-  npm install
+  - sudo apt install zip
+  - npm install
 script: npm run build:prod && zip -r docs.zip docs docs
 deploy:
   provider: pages
