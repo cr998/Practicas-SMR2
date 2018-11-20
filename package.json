@@ -7,7 +7,7 @@
     "serve": "http-server devdocs -c-1",
     "build:dev": "node index.js dev",
     "build:prod": "node index.js prod",
-    "test": "echo \"Error: no test specified\""
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
